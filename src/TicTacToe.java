@@ -18,7 +18,7 @@ public class TicTacToe implements ActionListener {
     TicTacToe(){
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(800, 800);
-        frame.getContentPane().setBackground(Color.cyan);
+        frame.getContentPane().setBackground(new Color(25,25,25));
         frame.setLayout(new BorderLayout());
         frame.setVisible(true);
 
@@ -33,7 +33,7 @@ public class TicTacToe implements ActionListener {
         title_panel.setBounds(0,0,800,100);
 
         title_panel.add(textfield);
-        frame.add(title_panel);
+        frame.add(title_panel,BorderLayout.NORTH);
     }
     @Override
     public void actionPerformed(ActionEvent e) {
