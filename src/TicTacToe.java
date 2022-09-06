@@ -224,7 +224,6 @@ public class TicTacToe implements ActionListener {
         }
         textfield.setText("X wins");
     }
-
     public void oWins(int a, int b, int c){
         buttons[a].setBackground(Color.green);
         buttons[b].setBackground(Color.green);
